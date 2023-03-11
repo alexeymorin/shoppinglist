@@ -3,6 +3,8 @@ import Container from '@mui/material/Container';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import Stack from '@mui/material/Stack';
+import AddItem from './AddItem';
 import './App.css';
 
 function App() {
@@ -14,13 +16,16 @@ function App() {
 
   return (
     <Container>
-      <AppBar>
+      <AppBar position='static'>
         <Toolbar>
           <Typography variant='h6'>
             Shopping List
           </Typography>
         </Toolbar>    
       </AppBar>
+      <Stack alignItems='center'>
+        <AddItem addItem={addItem} />
+      </Stack>
     </Container>
   );
 }
