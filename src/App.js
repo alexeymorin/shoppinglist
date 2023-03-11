@@ -6,6 +6,12 @@ import Typography from '@mui/material/Typography';
 import './App.css';
 
 function App() {
+
+  const [items, setItems] = useState([]);
+  const addItem = (item) => {
+    setItems([item, ...items]);
+  };
+
   return (
     <Container>
       <AppBar>
