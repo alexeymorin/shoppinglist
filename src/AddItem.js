@@ -42,7 +42,7 @@ function AddItem(props) {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={AddItem}>Add</Button>
+          <Button onClick={addItem}>Add</Button>
         </DialogActions>
       </Dialog>
     </div>
